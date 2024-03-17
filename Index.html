@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice1</title>
+    <link rel="stylesheet" href="Style.css" />
+    <style>
+      button {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Smart Home Control</h1>
+    <div class="container">
+      <div class="card" "device">
+        <h2>Fan</h2>
+        <p>Control the speed of the fan</p>
+        <div class="line">
+        <img src="fan_icon.png" alt="Fan Icon" class="icon" height="50px" />
+        <label class="toggle">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-off="OFF" data-on="ON"></span>
+            <span class="toggle-handle"></span>
+         </label>
+        </div>
+        <div class="input">
+        <input type="range" min="0" max="100" value="50" id="fanSpeed" />
+    </div>
+        <label for="fanSpeed">Fan Speed</label>
+      </div>
+      <div class="card">
+        <h2>Bulb</h2>
+        <p>Turn on or off the bulb</p>
+        <div class="line">
+        <img src="bulb_icon.png" alt="Bulb Icon" class="icon" height="50px" />
+            <label class="toggle">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-off="OFF" data-on="ON"></span>
+            <span class="toggle-handle"></span>
+         </label>
+        </div>
+        </div>
+      <div class="card">
+        <h2>LED</h2>
+        <p>Control the color of the led</p>
+        <div class="line">
+        <img src="led_icon.png" alt="LED Icon" class="icon" height="50px" />
+        <label class="toggle">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-off="OFF" data-on="ON"></span>
+            <span class="toggle-handle"></span>
+         </label>
+        </div>
+        <div class="input">
+            <input type="range" min="0" max="100" value="50" id="LED_Color" />
+        </div>
+        <label for="Color_code">Colors</label>
+      </div>
+      <div class="card">
+        <h2>AC</h2>
+        <p>Control state & temp of Ac</p>
+        <div class="line">
+        <img src="ac_icon.png" alt="LED Icon" class="icon" height="50px" />
+        <label class="toggle">
+            <input class="toggle-input" type="checkbox" />
+            <span class="toggle-label" data-off="OFF" data-on="ON"></span>
+            <span class="toggle-handle"></span>
+         </label>
+        </div>
+        <div class="input">
+            <input type="range" min="0" max="100" value="50" id="fanSpeed" />
+        </div>
+        <label for="">Temperature</label>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
